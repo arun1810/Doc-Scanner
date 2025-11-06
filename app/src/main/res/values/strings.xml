@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DocScanner</string>
+    <string name="hey_there_lets_to_scan">Hey there👋🏻\nLets scan!</string>
+    <string name="failed_to_scan_document">Failed to scan document</string>
+    <string name="add_document">Add Document</string>
+    <string name="no_documents_available">No documents available</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="your_documents">Your Documents</string>
+    <string name="save_document">Save Document</string>
+    <string name="document_name">Document Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+</resources>
