@@ -1,9 +1,8 @@
 package com.arunscs.docscanner.ui.screens.savedocument
 
-//Write a composable dialog that asks for a name for the documemnt and a save button, the background must be a card
+//Write a composable dialog that asks for a name for the document and a save button, the background must be a card
 
 import android.content.ContentResolver
-import android.net.Uri
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -22,7 +21,6 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -30,10 +28,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.arunscs.docscanner.R
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 import java.io.File
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SavePDFDialog(
     title:String,

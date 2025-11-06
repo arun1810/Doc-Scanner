@@ -204,7 +204,7 @@ private fun DocumentsList(
 
 @Composable
 fun StickyHeader(title:String){
-    //Create a sticky header with card and inside it a text showing a title, the card should have rounded edges and add creativity
+    //Create a sticky header with card and inside it a text showing a title, the card should have rounded edges
     Card(
         shape = RoundedCornerShape(4.dp),
         elevation= CardDefaults.cardElevation(24.dp),
