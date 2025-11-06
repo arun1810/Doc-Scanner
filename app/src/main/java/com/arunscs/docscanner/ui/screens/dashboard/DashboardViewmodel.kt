@@ -37,11 +37,16 @@ class DashboardViewModel @Inject constructor(
         }
         try {
             documentRepository.getAllDocuments().collect{ documents->
-                _uiState.update {
-                    DashboardUiState.DocumentsAvailable(documents)
+                if(documents.isEmpty()){
+                    _uiState.update {
+                        DashboardUiState.NoDocuments
+                    }
+                }else{
+                    _uiState.update {
+                        DashboardUiState.DocumentsAvailable(documents)
+                    }
                 }
             }
-
         } catch (e: Exception) {
             _uiState.update {
                 DashboardUiState.Error
